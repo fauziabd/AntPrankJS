@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntPrankJS - The Quirky Web Crawler</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <div class="main-content">
+        <h1>AntPrankJS: The Quirky Web Crawler</h1>
+        
+        <p>Welcome to AntPrankJS, the delightful and slightly mischievous addition to your web projects! AntPrankJS brings a touch of whimsy to any webpage by unleashing a swarm of digital ants that crawl across the screen, captivating visitors and adding an element of surprise.</p>
+
+        <h2>Features</h2>
+        <ul>
+            <li>Realistic ant movement patterns</li>
+            <li>Customizable ant appearance (color and size)</li>
+            <li>Adjustable ant population and spawn rate</li>
+            <li>Lightweight and easy to implement</li>
+            <li>Compatible with most modern websites</li>
+        </ul>
+
+        <h2>How It Works</h2>
+        <p>AntPrankJS uses HTML5 canvas to create a seamless overlay on your webpage. The ants are drawn and animated using JavaScript, ensuring smooth performance across different devices and browsers.</p>
+
+        <h2>Implementation</h2>
+        <p>Adding AntPrankJS to your website is as easy as including two script tags and an initialization function. Here's a basic example:</p>
+        
+        <pre><code>&lt;script src="https://cdn.jsdelivr.net/gh/fauziabd/AntPrankJS@latest/antprank.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    initAntWalker({
+        maxAnts: 64,
+        antColor: "#4B3621",
+        antSize: 12,
+        addInterval: 30000
+    });
+&lt;/script&gt;</code></pre>
+
+        <h2>Customization</h2>
+        <p>AntPrankJS is highly customizable. You can adjust various parameters to suit your needs:</p>
+        <ul>
+            <li><strong>maxAnts:</strong> The maximum number of ants on the screen</li>
+            <li><strong>antColor:</strong> The color of the ants (any valid CSS color)</li>
+            <li><strong>antSize:</strong> The base size of the ants in pixels</li>
+            <li><strong>addInterval:</strong> The interval (in milliseconds) at which new ants are added</li>
+        </ul>
+        
+        <p>Use the configurator in the sidebar to experiment with different settings and generate a custom implementation code.</p>
+
+        <h2>Why AntPrankJS?</h2>
+        <p>Whether you want to add a unique touch to your personal blog, create an engaging element for a nature-themed website, or simply prank your colleagues, AntPrankJS offers a fun and unexpected way to enhance web experiences. It's a conversation starter, an engagement booster, and a delightful little secret waiting to be discovered by your site's visitors.</p>
+
+        <h2>Get Started</h2>
+        <p>Ready to unleash the ants on your website? Use the configurator to customize your ants, then copy the generated code and paste it into your HTML. Watch as your digital ecosystem comes to life!</p>
+    </div>
+
+    <div class="sidebar">
+        <div class="configurator">
+            <h2>Ant Configurator</h2>
+            <div class="config-item">
+                <label for="maxAnts">Maximum Number of Ants:</label>
+                <input type="number" id="maxAnts" min="1" max="1000" value="64">
+            </div>
+            <div class="config-item">
+                <label for="antColor">Ant Color:</label>
+                <input type="color" id="antColor" value="#4B3621">
+            </div>
+            <div class="config-item">
+                <label for="antSize">Base Ant Size:</label>
+                <input type="number" id="antSize" min="5" max="50" value="12">
+            </div>
+            <div class="config-item">
+                <label for="addInterval">Add Ants Interval (ms):</label>
+                <input type="number" id="addInterval" min="5000" max="60000" value="30000">
+            </div>
+            
+            <button id="updateDemo">Update Demo</button>
+            <button id="generateScript">Generate Install Script</button>
+            
+            <h3>Install Script</h3>
+            <textarea id="scriptOutput" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/fauziabd/AntPrankJS@latest/antprank.js"></script>
+    <script src="src/configurator.js"></script>
+</body>
+</html>
