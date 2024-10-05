@@ -26,7 +26,7 @@ let currentConfig = {
   
   function generateScript() {
     const script = `
-  <script src="https://cdn.jsdelivr.net/gh/yourusername/ant-walker@latest/ant-walker.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fauziabd/AntPrankJS@main/antprank.js"></script>
   <script>
       initAntWalker({
           maxAnts: ${currentConfig.maxAnts},
